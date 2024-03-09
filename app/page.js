@@ -15,6 +15,10 @@ export default function Home() {
   const underLineAnimation = require("@/app/assets/Animation_Underline.json");
   const circleAnimation = require("@/app/assets/Animation_Circle.json");
   const arrowDownAnimation = require("@/app/assets/Animation_Arrow_Down.json");
+  const arrowDownTwoAnimation = require("@/app/assets/Animation_Arrow_Down_Two.json");
+  const arrowTopAnimation = require("@/app/assets/Animation_Arrow_Top.json");
+  const underLineTwoAnimation = require("@/app/assets/Animation_Underline_Two.json");
+  const circleTwoAnimation = require("@/app/assets/Animation_Circle_Two.json");
 
   return (
     <NextUIProvider className="text-mine-shaft-950 bg-gallery">
@@ -22,12 +26,12 @@ export default function Home() {
       <section className="max-w-7xl mx-auto">
         <div className="mt-12 py-16 md:py-24">
           <h1 className="title-font text-5xl lg:text-7xl font-semi-bold px-3 lg:px-60 text-center pb-7">
-            La libertad de centrarse en mejorar su tecnología
+            Lidera la revolución digital mientras mejoras tu tecnología
           </h1>
           <p className="font-normal text-sm lg:text-base px-3 md:px-60 lg:px-80 text-center pb-7">
-            Diseñamos y desarrollamos aplicaciones de software a medida para
-            agilizar sus procesos empresariales, mejorar la eficacia y aumentar
-            la productividad.
+            Impulsamos tu presencia digital y maximizamos la efectividad de tus
+            estrategias de marketing para que logres resultados extraordinarios
+            en línea.
           </p>
           <div className="flex flex-col md:flex-row md:justify-center md:items-center px-3 gap-4">
             <PrincipalButton as={Link} variant="flat" href="/sobre-nosotros">
@@ -61,11 +65,10 @@ export default function Home() {
                 Podemos llevar tu negocio al siguiente nivel.
               </h1>
               <p className="font-normal text-sm lg:text-base pb-7">
-                Proporcionamos servicios de consultoría estratégica de TI para
-                ayudar a las empresas a alinear sus objetivos tecnológicos con
-                sus objetivos empresariales generales, lo que les permite tomar
-                decisiones informadas y mantenerse a la cabeza en un mercado
-                competitivo.
+                Te asesoramos estratégicamente en tecnología para que puedas
+                alcanzar tus metas empresariales. En conjunto, definiremos la
+                ruta que te permitirá liderar en un mercado desafiante y siempre
+                cambiante. ¡Juntos, podemos lograrlo!
               </p>
               <SecondaryButton as={Link} variant="flat" href="/sobre-nostros">
                 Leer más
@@ -76,14 +79,14 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="pb-8">
           <h1 className="title-font text-5xl lg:text-7xl font-semi-bold text-center pb-7">
-            Servicios que le <br></br>ayudan a crecer
+            Servicios que te <br></br>ayudan a crecer
           </h1>
           <p className="font-normal text-sm lg:text-base text-center pb-4">
-            Damos prioridad a la seguridad de sus activos digitales y su
-            información confidencial <br></br> aplicando sólidas medidas de
-            ciberseguridad.
+            ¡Imagina lo que podemos lograr juntos! Ofrecemos servicios diseñados
+            para impulsar <br></br> tu crecimiento y potenciar tu presencia en
+            línea.
           </p>
           <p className="font-semibold text-base lg:text-xl text-center pb-7">
             No más preocupaciones.
@@ -100,7 +103,7 @@ export default function Home() {
                 className="w-20 lg:w-28"
               />
             </div>
-            <div className="mt-14 lg:mt-20 -ml-10">
+            <div className="mt-14 lg:mt-16 -ml-10">
               <Player
                 loop={true}
                 autoplay={true}
@@ -108,7 +111,7 @@ export default function Home() {
                 className="w-44 lg:w-56 "
               />
               <p className="font-semibold text-3xl lg:text-4xl text-center -mt-12 lg:-mt-14 pl-5 md:pl-0">
-                Reseach
+                Diseño
               </p>
             </div>
             <div>
@@ -123,34 +126,60 @@ export default function Home() {
               </p>
             </div>
             <div className="mt-14">
-              <p className="font-semibold text-3xl lg:text-4xl text-center rotate-45">
+              <p className="font-semibold text-3xl lg:text-4xl text-center -rotate-45">
                 Diseño web
               </p>
             </div>
-            <div className="mt-14 col-span-2 lg:col-span-1">
+            <div className="mt-14 -ml-10 lg:hidden">
+              <Player
+                loop={true}
+                autoplay={true}
+                src={arrowTopAnimation}
+                className="w-20 md:w-36"
+              />
+            </div>
+            <div className="mt-14 -ml-16">
               <p className="font-semibold text-3xl lg:text-4xl text-center rotate-25">
-                Animación
+                Email marketing
               </p>
             </div>
-            <div className="mt-14 col-span-3 lg:col-span-1">
+            <div className="mt-8 lg:mt-14 col-span-3 lg:col-span-1 flex place-content-center">
               <p className="font-semibold text-3xl lg:text-4xl text-center -rotate-25">
                 Desarrollo <br></br> web
               </p>
+              <Player
+                loop={true}
+                autoplay={true}
+                src={arrowDownTwoAnimation}
+                className="w-28 lg:w-32 md:hidden lg:block"
+              />
             </div>
             <div className="mt-14 col-span-2 md:col-span-1">
               <p className="font-semibold text-3xl lg:text-4xl text-center rotate-12">
-                Producción
+                Gestion de redes sociales
               </p>
             </div>
             <div className="mt-14">
-              <p className="font-semibold text-3xl lg:text-4xl text-center ">
-                Seo
+              <Player
+                loop={true}
+                autoplay={true}
+                src={circleTwoAnimation}
+                className="w-28 lg:w-32 "
+              />
+              <p className="font-semibold text-3xl lg:text-4xl text-center  -mt-14 lg:-mt-16">
+                SEO
               </p>
             </div>
             <div className="mt-14 col-span-3 md:col-span-1 lg:col-span-4">
               <p className="font-semibold text-3xl lg:text-4xl text-center rotate-12">
                 Marketing Digital
               </p>
+              <Player
+                loop={true}
+                autoplay={true}
+                src={underLineTwoAnimation}
+                className="w-48 lg:w-56 rotate-12"
+              />
             </div>
           </div>
         </div>
